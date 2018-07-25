@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title> Booking </title> 
+	<style> body 
+	{ 
+		background-color: lightblue; 
+	} 
+	h1 
+	{ 
+		color: white; 
+		text-align: center; 
+	} 
+	p 
+	{ 
+		font-family: verdana; 
+		font-size: 20px; 
+	} 
+	</style> 
+	<script language="javascript"> function check(form) /*function to check userid & password*/ 
+	{
+/*the following code checkes whether the entered userid and password are matching*/ 
+		if(form.nu.value <= 20 && form.age.value >= 25 ) 
+		{ 
+			alert("You have booked " + form.nu.value + " tickets from " + form.sarc.value + " to " + form.dest.value ); /*opens the target page while Id & password matches*/ 
+		} 
+		else 
+		{ 
+			alert("Error: Invalid Limit or Age"); /*displays error message*/ 
+		} 
+	} 
+</script> 
+</head> 
+<body> 
+	<h1> Booking </h1> 
+<form name="login" align = "center"> 
+	<br><br>Name<input type="text" name="name"/> 
+	<br><br>Source<input type = "text" name = "sarc"/>
+	<br><br> Destination<input type = "text" name = "dest"/>
+	<br><br>Age<input type = "text" name = "age"/> 
+	<br><br>Number<input type = "text" name = "nu"/>
+	<br><br><input type="button" onclick="check(this.form)" value="Submit"/> 
+	<br><br><input type="Reset" value="Cancel"/> 
+</form> 
+</body> 
+</html>

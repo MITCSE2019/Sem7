@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Position</title>
+</head>
+<body>
+	<h1 id = "test">Hello</h1>
+	<script>
+		
+			var x = document.getElementById("test").getBoundingClientRect();
+			alert("("+x.top+window.scrollY +"," +x.left+window.scrollX+")");
+		
+	</script>
+</body>
+</html>

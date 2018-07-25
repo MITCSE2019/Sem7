@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    body{ background-color: ivory; }
+    canvas{border:1px solid red;}
+</style>
+<script>
+function rain(){
+ 
+    var canvas=document.getElementById("canvas");
+    var ctx=canvas.getContext("2d");
+    var ok2animate=true;
+ 
+    function Drop(){
+        this.x=Math.random()*(canvas.width-20);
+        this.y=-Math.random()*20;
+        this.fallRate=3;
+    }
+ 
+    Drop.prototype.draw=function(){
+        ctx.beginPath();
+        ctx.moveTo(this.x-5,this.y);
+        ctx.lineTo(this.x,this.y-7);
+        ctx.lineTo(this.x+5,this.y);
+        ctx.arc(this.x,this.y,5,0,Math.PI);
+        ctx.closePath();
+        ctx.fill();
+        return(this);    
+    }
+    Drop.prototype.fall=function(){
+        this.y+=this.fallRate;
+        return(this);
+    }
+    function animate(){
+        if(ok2animate){
+            requestAnimationFrame(animate);
+        }
+        ctx.fillStyle="white";
+        ctx.fillRect(0,0,canvas.width,canvas.height)
+ 
+        ctx.fillStyle="#33FCFF";
+        for(var i=0;i<drops.length;i++){
+            drops[i].fall().draw();
+        }
+ 
+    }
+    var drops=[];
+    for(var i=0;i<10;i++){
+        drops.push(new Drop());    
+    }
+ 
+ 
+    setInterval(function(){  for(var i=0;i<10;i++){drops.push(new Drop());    }  }, 3000);
+ 
+ requestAnimationFrame(animate);
+}
+</script>
+</head>
+<body onload="rain()">
+    <canvas id="canvas" width=1000 height=1000></canvas>
+</body>
+</html>
