@@ -1,0 +1,5 @@
+C:\Users\Student\Desktop\D-23\Week_3\p3\p3\bin\Debug\p3.exe.config
+C:\Users\Student\Desktop\D-23\Week_3\p3\p3\bin\Debug\p3.exe
+C:\Users\Student\Desktop\D-23\Week_3\p3\p3\bin\Debug\p3.pdb
+C:\Users\Student\Desktop\D-23\Week_3\p3\p3\obj\Debug\p3.exe
+C:\Users\Student\Desktop\D-23\Week_3\p3\p3\obj\Debug\p3.pdb

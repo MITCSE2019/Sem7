@@ -1,0 +1,6 @@
+C:\Users\Student\Desktop\D-23\Week_3\p1\p1\bin\Debug\p1.exe.config
+C:\Users\Student\Desktop\D-23\Week_3\p1\p1\bin\Debug\p1.exe
+C:\Users\Student\Desktop\D-23\Week_3\p1\p1\bin\Debug\p1.pdb
+C:\Users\Student\Desktop\D-23\Week_3\p1\p1\obj\Debug\p1.csprojResolveAssemblyReference.cache
+C:\Users\Student\Desktop\D-23\Week_3\p1\p1\obj\Debug\p1.exe
+C:\Users\Student\Desktop\D-23\Week_3\p1\p1\obj\Debug\p1.pdb
