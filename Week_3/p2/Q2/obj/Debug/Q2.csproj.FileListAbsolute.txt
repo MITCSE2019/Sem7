@@ -1,0 +1,6 @@
+E:\Akashraj\Week 3\Q2\Q2\bin\Debug\Q2.exe.config
+E:\Akashraj\Week 3\Q2\Q2\bin\Debug\Q2.exe
+E:\Akashraj\Week 3\Q2\Q2\bin\Debug\Q2.pdb
+E:\Akashraj\Week 3\Q2\Q2\obj\Debug\Q2.csprojResolveAssemblyReference.cache
+E:\Akashraj\Week 3\Q2\Q2\obj\Debug\Q2.exe
+E:\Akashraj\Week 3\Q2\Q2\obj\Debug\Q2.pdb
