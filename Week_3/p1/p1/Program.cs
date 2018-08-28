@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace p1
 {
@@ -13,12 +9,12 @@ namespace p1
             string t;
             Console.WriteLine("Enter Limit");
             t = Console.ReadLine();
-            int n,x;
+            int n, x;
             int.TryParse(t, out n);
             Console.WriteLine("Enter elements of array");
             int i;
-            int[]a = new int[n];
-            for( i = 0; i < n; i++ )
+            int[] a = new int[n];
+            for (i = 0; i < n; i++)
             {
                 t = Console.ReadLine();
                 int.TryParse(t, out x);
@@ -26,7 +22,7 @@ namespace p1
             }
             Array.Sort(a);
             Console.Write("Output after sort:\t");
-            foreach( int y in a )
+            foreach (int y in a)
             {
                 Console.Write("{0}\t", y);
             }
