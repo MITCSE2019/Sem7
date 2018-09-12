@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        Raju Computers
+        <br />
+&nbsp;
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/home.aspx">Electronic</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/bag.aspx">Baggages</asp:HyperLink>
+&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Default.aspx">Offers</asp:HyperLink>
+        <br />
+        <asp:Image ID="Image1" runat="server" ImageUrl="i3.jpg" />
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <br />
+            <br />
+        
+        </asp:ContentPlaceHolder>
+        <br />
+        123, MG ROAD, Mangalore<br />
+    </div>
+    </form>
+</body>
+</html>
