@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 112px;
+        }
+        .auto-style2 {
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <p>
+                <asp:Image ID="Image1" runat="server" Height="86px" Width="774px" ImageUrl="~/download.png" />
+                <br />
+            </p>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Label ID="selectedmobile" runat="server" Text="Mobiles"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+            <p>
+            </p>
+    </div>
+    </form>
+</body>
+</html>
