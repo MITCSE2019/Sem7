@@ -25,7 +25,7 @@ public partial class update : System.Web.UI.Page
         int i, j;
         int.TryParse(id, out i);
         int.TryParse(price, out j);
-        string sql = "Update Items set price = " + i + "where itemID = " + j;
+        string sql = "Update Items set price = " + j + "where itemID = " + i;
         SqlCommand cmd = new SqlCommand(sql, con);
         cmd.ExecuteNonQuery();
         //Label1.Text = a.ToString();
